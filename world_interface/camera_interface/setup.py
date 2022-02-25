@@ -32,8 +32,6 @@ setup(
         'console_scripts': [
             'fake_marker_pub = camera_interface.fake_marker_pub:main',
             'cube_publisher = camera_interface.cube_publisher:main',
-            'object_publisher = camera_interface.maskRCNN_ros:main',
-            'object_client = camera_interface.update_object_client:main',
         ],
     },
 )
