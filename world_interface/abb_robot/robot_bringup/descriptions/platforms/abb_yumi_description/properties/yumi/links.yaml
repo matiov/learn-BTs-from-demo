@@ -1,0 +1,449 @@
+base_link:
+  inertial:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    mass: 0.00001
+    inertia:
+      type: "per_element"
+      ixx: 0.000001
+      ixy: 0.0
+      ixz: 0.0
+      iyy: 0.000001
+      iyz: 0.0
+      izz: 0.000001
+  visual:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "base_link.stl"
+    material: "light_grey"
+  collision:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "base_link.stl"
+
+robl_link_1:
+  inertial:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    mass: 0.00001
+    inertia:
+      type: "per_element"
+      ixx: 0.000001
+      ixy: 0.0
+      ixz: 0.0
+      iyy: 0.000001
+      iyz: 0.0
+      izz: 0.000001
+  visual:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "robl_link_1.dae"
+    material: "light_grey"
+  collision:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "robl_link_1.stl"
+
+robl_link_2:
+  inertial:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    mass: 0.00001
+    inertia:
+      type: "per_element"
+      ixx: 0.000001
+      ixy: 0.0
+      ixz: 0.0
+      iyy: 0.000001
+      iyz: 0.0
+      izz: 0.000001
+  visual:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "robl_link_2.dae"
+    material: "light_grey"
+  collision:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "robl_link_2.stl"
+
+robl_link_3:
+  inertial:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    mass: 0.00001
+    inertia:
+      type: "per_element"
+      ixx: 0.000001
+      ixy: 0.0
+      ixz: 0.0
+      iyy: 0.000001
+      iyz: 0.0
+      izz: 0.000001
+  visual:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "robl_link_3.dae"
+    material: "light_grey"
+  collision:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "robl_link_3.stl"
+
+robl_link_4:
+  inertial:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    mass: 0.00001
+    inertia:
+      type: "per_element"
+      ixx: 0.000001
+      ixy: 0.0
+      ixz: 0.0
+      iyy: 0.000001
+      iyz: 0.0
+      izz: 0.000001
+  visual:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "robl_link_4.dae"
+    material: "light_grey"
+  collision:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "robl_link_4.stl"
+
+robl_link_5:
+  inertial:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    mass: 0.00001
+    inertia:
+      type: "per_element"
+      ixx: 0.000001
+      ixy: 0.0
+      ixz: 0.0
+      iyy: 0.000001
+      iyz: 0.0
+      izz: 0.000001
+  visual:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "robl_link_5.dae"
+    material: "light_grey"
+  collision:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "robl_link_5.stl"
+
+robl_link_6:
+  inertial:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    mass: 0.00001
+    inertia:
+      type: "per_element"
+      ixx: 0.000001
+      ixy: 0.0
+      ixz: 0.0
+      iyy: 0.000001
+      iyz: 0.0
+      izz: 0.000001
+  visual:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "robl_link_6.dae"
+    material: "light_grey"
+  collision:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "robl_link_6.stl"
+
+robl_link_7:
+  inertial:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    mass: 0.00001
+    inertia:
+      type: "per_element"
+      ixx: 0.000001
+      ixy: 0.0
+      ixz: 0.0
+      iyy: 0.000001
+      iyz: 0.0
+      izz: 0.000001
+  visual:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "robl_link_7.dae"
+    material: "light_grey"
+  collision:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "robl_link_7.stl"
+
+robr_link_1:
+  inertial:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    mass: 0.00001
+    inertia:
+      type: "per_element"
+      ixx: 0.000001
+      ixy: 0.0
+      ixz: 0.0
+      iyy: 0.000001
+      iyz: 0.0
+      izz: 0.000001
+  visual:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "robr_link_1.dae"
+    material: "light_grey"
+  collision:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "robr_link_1.stl"
+
+robr_link_2:
+  inertial:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    mass: 0.00001
+    inertia:
+      type: "per_element"
+      ixx: 0.000001
+      ixy: 0.0
+      ixz: 0.0
+      iyy: 0.000001
+      iyz: 0.0
+      izz: 0.000001
+  visual:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "robr_link_2.dae"
+    material: "light_grey"
+  collision:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "robr_link_2.stl"
+
+robr_link_3:
+  inertial:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    mass: 0.00001
+    inertia:
+      type: "per_element"
+      ixx: 0.000001
+      ixy: 0.0
+      ixz: 0.0
+      iyy: 0.000001
+      iyz: 0.0
+      izz: 0.000001
+  visual:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "robr_link_3.dae"
+    material: "light_grey"
+  collision:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "robr_link_3.stl"
+
+robr_link_4:
+  inertial:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    mass: 0.00001
+    inertia:
+      type: "per_element"
+      ixx: 0.000001
+      ixy: 0.0
+      ixz: 0.0
+      iyy: 0.000001
+      iyz: 0.0
+      izz: 0.000001
+  visual:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "robr_link_4.dae"
+    material: "light_grey"
+  collision:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "robr_link_4.stl"
+
+robr_link_5:
+  inertial:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    mass: 0.00001
+    inertia:
+      type: "per_element"
+      ixx: 0.000001
+      ixy: 0.0
+      ixz: 0.0
+      iyy: 0.000001
+      iyz: 0.0
+      izz: 0.000001
+  visual:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "robr_link_5.dae"
+    material: "light_grey"
+  collision:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "robr_link_5.stl"
+
+robr_link_6:
+  inertial:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    mass: 0.00001
+    inertia:
+      type: "per_element"
+      ixx: 0.000001
+      ixy: 0.0
+      ixz: 0.0
+      iyy: 0.000001
+      iyz: 0.0
+      izz: 0.000001
+  visual:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "robr_link_6.dae"
+    material: "light_grey"
+  collision:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "robr_link_6.stl"
+
+robr_link_7:
+  inertial:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    mass: 0.00001
+    inertia:
+      type: "per_element"
+      ixx: 0.000001
+      ixy: 0.0
+      ixz: 0.0
+      iyy: 0.000001
+      iyz: 0.0
+      izz: 0.000001
+  visual:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "robr_link_7.dae"
+    material: "light_grey"
+  collision:
+    origin:
+      xyz: "0.0 0.0 0.0"
+      rpy: "0.0 0.0 0.0"
+    geometry:
+      type: "mesh"
+      filename: "robr_link_7.stl"

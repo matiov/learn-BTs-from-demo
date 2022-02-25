@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:macro name="abb_irb14000_05_50" params="prefix">
+    <!-- Includes -->
+    <xacro:include filename="$(find abb_description_utilities)/xacro/common.xacro"/>
+
+    <!-- Properties -->
+    <xacro:load_properties package="abb_irb14000_description" model="irb14000_05_50"/>
+
+    <!-- Links (base) -->
+	  <xacro:link_tag name="base_link"/>
+	  <xacro:link_tag name="base"/>
+
+    <!-- Links (ROB_L) -->
+	  <xacro:link_tag name="robl_base_link"/>
+	  <xacro:link_tag name="robl_link_1"/>
+	  <xacro:link_tag name="robl_link_2"/>
+	  <xacro:link_tag name="robl_link_3"/>
+	  <xacro:link_tag name="robl_link_4"/>
+	  <xacro:link_tag name="robl_link_5"/>
+	  <xacro:link_tag name="robl_link_6"/>
+	  <xacro:link_tag name="robl_link_7"/>
+	  <xacro:link_tag name="robl_flange"/>
+	  <xacro:link_tag name="robl_tool0"/>
+
+    <!-- Links (ROB_R) -->
+	  <xacro:link_tag name="robr_base_link"/>
+	  <xacro:link_tag name="robr_link_1"/>
+	  <xacro:link_tag name="robr_link_2"/>
+	  <xacro:link_tag name="robr_link_3"/>
+	  <xacro:link_tag name="robr_link_4"/>
+	  <xacro:link_tag name="robr_link_5"/>
+	  <xacro:link_tag name="robr_link_6"/>
+	  <xacro:link_tag name="robr_link_7"/>
+	  <xacro:link_tag name="robr_flange"/>
+	  <xacro:link_tag name="robr_tool0"/>
+
+    <!-- Joints (base) -->
+    <xacro:joint_tag name="base_joint" parent="base_link" child="base"/>
+
+    <!-- Joints (ROB_L) -->
+    <xacro:joint_tag name="robl_base_joint"     parent="base_link"      child="robl_base_link"/>
+    <xacro:joint_tag name="robl_joint_1"        parent="robl_base_link" child="robl_link_1"/>
+    <xacro:joint_tag name="robl_joint_2"        parent="robl_link_1"    child="robl_link_2"/>
+    <xacro:joint_tag name="robl_joint_3"        parent="robl_link_2"    child="robl_link_3"/>
+    <xacro:joint_tag name="robl_joint_4"        parent="robl_link_3"    child="robl_link_4"/>
+    <xacro:joint_tag name="robl_joint_5"        parent="robl_link_4"    child="robl_link_5"/>
+    <xacro:joint_tag name="robl_joint_6"        parent="robl_link_5"    child="robl_link_6"/>
+    <xacro:joint_tag name="robl_joint_7"        parent="robl_link_6"    child="robl_link_7"/>
+    <xacro:joint_tag name="robl_joint_7_flange" parent="robl_link_7"    child="robl_flange"/>
+    <xacro:joint_tag name="robl_flange_tool0"   parent="robl_flange"    child="robl_tool0"/>
+
+    <!-- Joints (ROB_R) -->
+    <xacro:joint_tag name="robr_base_joint"     parent="base_link"      child="robr_base_link"/>
+    <xacro:joint_tag name="robr_joint_1"        parent="robr_base_link" child="robr_link_1"/>
+    <xacro:joint_tag name="robr_joint_2"        parent="robr_link_1"    child="robr_link_2"/>
+    <xacro:joint_tag name="robr_joint_3"        parent="robr_link_2"    child="robr_link_3"/>
+    <xacro:joint_tag name="robr_joint_4"        parent="robr_link_3"    child="robr_link_4"/>
+    <xacro:joint_tag name="robr_joint_5"        parent="robr_link_4"    child="robr_link_5"/>
+    <xacro:joint_tag name="robr_joint_6"        parent="robr_link_5"    child="robr_link_6"/>
+    <xacro:joint_tag name="robr_joint_7"        parent="robr_link_6"    child="robr_link_7"/>
+    <xacro:joint_tag name="robr_joint_7_flange" parent="robr_link_7"    child="robr_flange"/>
+    <xacro:joint_tag name="robr_flange_tool0"   parent="robr_flange"    child="robr_tool0"/>
+
+    <!-- Transmissions (ROB_L) -->
+    <xacro:transmission_tag name="robl_transmission_1" joint="robl_joint_1"/>
+    <xacro:transmission_tag name="robl_transmission_2" joint="robl_joint_2"/>
+    <xacro:transmission_tag name="robl_transmission_3" joint="robl_joint_3"/>
+    <xacro:transmission_tag name="robl_transmission_4" joint="robl_joint_4"/>
+    <xacro:transmission_tag name="robl_transmission_5" joint="robl_joint_5"/>
+    <xacro:transmission_tag name="robl_transmission_6" joint="robl_joint_6"/>
+    <xacro:transmission_tag name="robl_transmission_7" joint="robl_joint_7"/>
+
+    <!-- Transmissions (ROB_R) -->
+    <xacro:transmission_tag name="robr_transmission_1" joint="robr_joint_1"/>
+    <xacro:transmission_tag name="robr_transmission_2" joint="robr_joint_2"/>
+    <xacro:transmission_tag name="robr_transmission_3" joint="robr_joint_3"/>
+    <xacro:transmission_tag name="robr_transmission_4" joint="robr_joint_4"/>
+    <xacro:transmission_tag name="robr_transmission_5" joint="robr_joint_5"/>
+    <xacro:transmission_tag name="robr_transmission_6" joint="robr_joint_6"/>
+    <xacro:transmission_tag name="robr_transmission_7" joint="robr_joint_7"/>
+
+    <!-- Gazebo (base) -->
+    <xacro:gazebo_link_tag link="base_link"/>
+
+    <!-- Gazebo (ROB_L) -->
+    <xacro:gazebo_link_tag link="robl_link_1"/>
+    <xacro:gazebo_link_tag link="robl_link_2"/>
+    <xacro:gazebo_link_tag link="robl_link_3"/>
+    <xacro:gazebo_link_tag link="robl_link_4"/>
+    <xacro:gazebo_link_tag link="robl_link_5"/>
+    <xacro:gazebo_link_tag link="robl_link_6"/>
+    <xacro:gazebo_link_tag link="robl_link_7"/>
+
+    <!-- Gazebo (ROB_R) -->
+    <xacro:gazebo_link_tag link="robr_link_1"/>
+    <xacro:gazebo_link_tag link="robr_link_2"/>
+    <xacro:gazebo_link_tag link="robr_link_3"/>
+    <xacro:gazebo_link_tag link="robr_link_4"/>
+    <xacro:gazebo_link_tag link="robr_link_5"/>
+    <xacro:gazebo_link_tag link="robr_link_6"/>
+    <xacro:gazebo_link_tag link="robr_link_7"/>
+  </xacro:macro>
+</robot>

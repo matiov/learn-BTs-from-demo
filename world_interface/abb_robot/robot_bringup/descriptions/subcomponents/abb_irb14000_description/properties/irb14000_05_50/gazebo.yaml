@@ -1,0 +1,44 @@
+base_link:
+  material: "Gazebo/White"
+
+robl_link_1:
+  turn_gravity_off: true
+
+robl_link_2:
+  turn_gravity_off: true
+
+robl_link_3:
+  turn_gravity_off: true
+
+robl_link_4:
+  turn_gravity_off: true
+
+robl_link_5:
+  turn_gravity_off: true
+
+robl_link_6:
+  turn_gravity_off: true
+
+robl_link_7:
+  turn_gravity_off: true
+
+robr_link_1:
+  turn_gravity_off: true
+
+robr_link_2:
+  turn_gravity_off: true
+
+robr_link_3:
+  turn_gravity_off: true
+
+robr_link_4:
+  turn_gravity_off: true
+
+robr_link_5:
+  turn_gravity_off: true
+
+robr_link_6:
+  turn_gravity_off: true
+
+robr_link_7:
+  turn_gravity_off: true

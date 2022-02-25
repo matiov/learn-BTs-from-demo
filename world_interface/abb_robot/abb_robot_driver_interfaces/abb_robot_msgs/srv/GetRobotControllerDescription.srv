@@ -1,0 +1,26 @@
+#===================================================================================================
+# Description:
+#   Service definition for getting a (partial) description of
+#   an ABB robot controller system.
+#
+# Note:
+#   The description will be returned in a Google Protocol Buffer text format.
+#===================================================================================================
+
+#---------------------------------------------------------------------------------------------------
+# Service request fields
+#---------------------------------------------------------------------------------------------------
+
+---
+
+#---------------------------------------------------------------------------------------------------
+# Service response fields
+#---------------------------------------------------------------------------------------------------
+
+# Description of the robot controller system.
+string description
+
+# Service result indicating success/failure.
+#
+# Note: Refer to 'abb_robot_msgs/ServiceResult' for defined results.
+ServiceResult result

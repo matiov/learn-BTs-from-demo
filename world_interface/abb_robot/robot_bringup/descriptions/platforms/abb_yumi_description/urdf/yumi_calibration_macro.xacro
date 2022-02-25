@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:macro name="abb_yumi" params="prefix">
+    <!-- Includes -->
+    <xacro:include filename="$(find abb_description_utilities)/xacro/common.xacro"/>
+    <xacro:include filename="$(find abb_irb14000_description)/urdf/irb14000_05_50_macro.xacro"/>
+    <xacro:include filename="$(find abb_mp_smart_gripper_description)/urdf/sg_macro.xacro"/>
+    <xacro:include filename="$(find abb_mp_camera_description)/urdf/azure_kinect_macro.xacro"/>
+
+    <!-- Properties -->
+    <xacro:load_properties package="abb_yumi_description" model="yumi"/>
+
+
+    <!-- ================ Subcomponents ================ -->
+
+    <!-- YuMi robot -->
+    <xacro:abb_irb14000_05_50 prefix="${prefix}yumi_"/>
+
+    <!-- SmartGrippers -->
+    <xacro:abb_sg prefix="${prefix}yumi_robr_sg_"/>
+    <xacro:joint_tag name="yumi_robr_sg_joint" parent="yumi_robr_tool0" child="yumi_robr_sg_base_link"/>
+
+    <!-- Camera -->
+    <xacro:ms_azure_kinect prefix="${prefix}"/>
+    <xacro:joint_tag name="cs_camera_joint" parent="yumi_base_link" child="camera_base"/>
+
+    
+  </xacro:macro>
+</robot>
+

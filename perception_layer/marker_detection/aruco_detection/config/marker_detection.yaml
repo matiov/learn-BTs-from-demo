@@ -1,0 +1,12 @@
+{TEMPLATE_NAMESPACE}:
+    sensors:
+        camera:
+            aruco_node:
+                ros__parameters:
+                    marker_size: 0.034
+                    aruco_dictionary_id: 'DICT_ARUCO_ORIGINAL'
+                    camera_frame: '{TEMPLATE_PREFIX}rgb_camera_link'
+
+            marker_publisher:
+                ros__parameters:
+                    reference_frame: '{TEMPLATE_PREFIX}yumi_base_link'

@@ -1,0 +1,30 @@
+yumi_joint:
+  type: "fixed"
+  origin:
+    xyz: "0.0 0.0 0.0"
+    rpy: "0.0 0.0 0.0"
+
+yumi_robl_sg_joint:
+  type: "fixed"
+  origin:
+    xyz: "0.0 0.0 0.0"
+    rpy: "0.0 0.0 0.0"
+
+yumi_robr_sg_joint:
+  type: "fixed"
+  origin:
+    xyz: "0.0 0.0 0.0"
+    rpy: "0.0 0.0 0.0"
+
+cs_camera_joint:
+  type: "fixed"
+  origin:
+    xyz: "0.24228048452047926 -0.00688667039513833 0.4810008089579986"
+    rpy: "-0.8646716 54.5997341 0.6318282"
+
+# before calibration
+#cs_camera_joint:
+#  type: "fixed"
+#  origin:
+#    xyz: "0.243 -0.006 0.468"
+#    rpy: "0.0 54.0 0.0"

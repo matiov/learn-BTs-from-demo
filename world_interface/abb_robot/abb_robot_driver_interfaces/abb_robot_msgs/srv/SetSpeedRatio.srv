@@ -1,0 +1,26 @@
+#===================================================================================================
+# Description:
+#   Service definition for setting the speed ratio for
+#   an ABB robot controller system's RAPID motions (e.g. MoveAbsJ and MoveL).
+#
+# Note:
+#   The speed ratio must be an integer in the range [0, 100] (i.e. inclusive).
+#===================================================================================================
+
+#---------------------------------------------------------------------------------------------------
+# Service request fields
+#---------------------------------------------------------------------------------------------------
+
+# New speed ratio.
+uint8 speed_ratio
+
+---
+
+#---------------------------------------------------------------------------------------------------
+# Service response fields
+#---------------------------------------------------------------------------------------------------
+
+# Service result indicating success/failure.
+#
+# Note: Refer to 'abb_robot_msgs/ServiceResult' for defined results.
+ServiceResult result

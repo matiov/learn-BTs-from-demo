@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<robot name="abb_irb14000_05_50" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- Arguments -->
+  <xacro:arg name="prefix" default=""/>
+
+  <!-- Includes -->
+  <xacro:include filename="$(find abb_irb14000_description)/urdf/irb14000_05_50_macro.xacro"/>
+
+  <!-- Instantiations -->
+  <xacro:abb_irb14000_05_50 prefix="$(arg prefix)"/>
+</robot>

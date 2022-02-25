@@ -1,0 +1,30 @@
+#===================================================================================================
+# Description:
+#   Service definition for setting the value of a predefined RAPID variable
+#   of the custom RAPID data type "EGMSettings".
+#
+# Note:
+#   This variable is defined in each RAPID motion task, in ABB robot controller systems,
+#   that are using the RobotWare "StateMachine Add-In" together with an EGM license.
+#===================================================================================================
+
+#---------------------------------------------------------------------------------------------------
+# Service request fields
+#---------------------------------------------------------------------------------------------------
+
+# The RAPID task, where the variable exists.
+string task
+
+# New settings to use for RAPID EGM instructions.
+EGMSettings settings
+
+---
+
+#---------------------------------------------------------------------------------------------------
+# Service response fields
+#---------------------------------------------------------------------------------------------------
+
+# Service result indicating success/failure.
+#
+# Note: Refer to 'abb_robot_msgs/ServiceResult' for defined results.
+abb_robot_msgs/ServiceResult result

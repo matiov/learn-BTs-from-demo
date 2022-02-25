@@ -1,0 +1,21 @@
+{TEMPLATE_NAMESPACE}:
+    sensors:
+        camera:
+            cube_publisher:
+                ros__parameters:
+                    width: 0.05
+                    max_age: 2.5
+                    cubes: ['A', 'B', 'C', 'D', 'E', 'F']
+                    base_frame: '{TEMPLATE_PREFIX}yumi_base_link'
+
+    robot:
+        tool_broadcaster_node:
+            ros__parameters:
+                from_frame: '{TEMPLATE_PREFIX}yumi_robl_tool0'
+                to_frame: '{TEMPLATE_PREFIX}yumi_task_tool'
+                base_frame: '{TEMPLATE_PREFIX}yumi_base_link'
+                rws_tool: True
+                rob_task: 'ROB_R'
+                oX: 0.0
+                oY: 0.0
+                oZ: -0.01

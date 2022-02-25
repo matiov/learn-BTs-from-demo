@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<robot name="abb_yumi" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- Arguments -->
+  <xacro:arg name="prefix" default=""/>
+  
+  <!-- Includes -->
+  <xacro:include filename="$(find abb_yumi_description)/urdf/yumi_calibration_macro.xacro"/>
+
+  <!-- Instantiations -->
+  <xacro:abb_yumi prefix="$(arg prefix)"/>
+</robot>

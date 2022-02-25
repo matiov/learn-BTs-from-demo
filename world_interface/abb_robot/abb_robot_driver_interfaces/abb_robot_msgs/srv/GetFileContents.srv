@@ -1,0 +1,29 @@
+#===================================================================================================
+# Description:
+#   Service definition for getting the contents of a file existing
+#   in an ABB robot controller system.
+#
+# Note:
+#   The file is assumed to be located in the system's home directory.
+#===================================================================================================
+
+#---------------------------------------------------------------------------------------------------
+# Service request fields
+#---------------------------------------------------------------------------------------------------
+
+# Filename (including file extension) of the targeted file.
+string filename
+
+---
+
+#---------------------------------------------------------------------------------------------------
+# Service response fields
+#---------------------------------------------------------------------------------------------------
+
+# Contents of the file.
+string contents
+
+# Service result indicating success/failure.
+#
+# Note: Refer to 'abb_robot_msgs/ServiceResult' for defined results.
+ServiceResult result

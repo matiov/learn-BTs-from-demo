@@ -1,0 +1,26 @@
+#===================================================================================================
+# Description:
+#   Service definition for getting the value of a RAPID 'string' symbol (e.g. a variable)
+#   defined in an ABB robot controller system.
+#===================================================================================================
+
+#---------------------------------------------------------------------------------------------------
+# Service request fields
+#---------------------------------------------------------------------------------------------------
+
+# Path to the targeted RAPID symbol.
+RAPIDSymbolPath path
+
+---
+
+#---------------------------------------------------------------------------------------------------
+# Service response fields
+#---------------------------------------------------------------------------------------------------
+
+# Value of the RAPID symbol.
+string value
+
+# Service result indicating success/failure.
+#
+# Note: Refer to 'abb_robot_msgs/ServiceResult' for defined results.
+ServiceResult result

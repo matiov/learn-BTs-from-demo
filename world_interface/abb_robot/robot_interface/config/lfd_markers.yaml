@@ -1,0 +1,11 @@
+{TEMPLATE_NAMESPACE}:
+    robot:
+        lfd_gui:
+            ros__parameters:
+                namespace: '/{TEMPLATE_NAMESPACE}'
+                default_frame: '{TEMPLATE_PREFIX}yumi_base_link'
+                frames: ['A', 'marker_61']
+                ee_frame: '{TEMPLATE_PREFIX}yumi_task_tool'
+                base_frame: '{TEMPLATE_PREFIX}yumi_base_link'
+                bt_tick_freq: 0.4
+                has_robot: True

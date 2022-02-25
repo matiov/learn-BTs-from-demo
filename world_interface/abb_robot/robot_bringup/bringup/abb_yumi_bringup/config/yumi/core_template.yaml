@@ -1,0 +1,67 @@
+####################################################################################################
+# Templated configurations for an ABB mobile platform's nodes and plugins.
+#
+# Note: All instances of "{TEMPLATE_*}" should be replaced with suitable values before passing the
+#       configurations to nodes and plugins (for example by a Python launch file).
+####################################################################################################
+
+{TEMPLATE_NAMESPACE}:
+  #=================================================================================================
+  # Hardware description
+  #=================================================================================================
+  joint_state_publisher_node:
+    ros__parameters:
+      publish_default_positions: true
+      publish_default_velocities: false
+      publish_default_efforts: false
+      source_list:
+        - 'robot/joint_states'
+
+  #=================================================================================================
+  # Peripherals (e.g. sensors and joystick)
+  #=================================================================================================
+  sensors:
+    camera:
+      k4a_ros_device_node:
+        ros__parameters:
+          depth_enabled:                     true                # Enable or disable the depth camera.
+          depth_mode:                        'NFOV_UNBINNED'     # Set the depth camera mode, which affects FOV, depth range, and camera resolution. See Azure Kinect documentation for full details. Valid options: NFOV_UNBINNED, NFOV_2X2BINNED, WFOV_UNBINNED, WFOV_2X2BINNED, and PASSIVE_IR.
+          depth_unit:                        '16UC1'             # Depth distance units. Options are: "32FC1" (32 bit float metre) or "16UC1" (16 bit integer millimetre).
+          color_enabled:                     true                # Enable or disable the color camera.
+          color_format:                      'bgra'              # The format of RGB camera. Valid options: bgra, jpeg.
+          color_resolution:                  '720P'              # Resolution at which to run the color camera. Valid options: 720P, 1080P, 1440P, 1536P, 2160P, 3072P.
+          fps:                               5                  # FPS to run both cameras at. Valid options are 5, 15, and 30.
+          point_cloud:                       true                # Generate a point cloud from depth data. Requires depth_enabled.
+          rgb_point_cloud:                   true                # Colorize the point cloud using the RBG camera. Requires color_enabled and depth_enabled.
+          point_cloud_in_depth_frame:        false               # Whether the RGB pointcloud is rendered in the depth frame (true) or RGB frame (false). Will either match the resolution of the depth camera (true) or the RGB camera (false).
+          sensor_sn:                         ''                  # Sensor serial number. If none provided, the first sensor will be selected.
+          recording_file:                    ''                  # Absolute path to a mkv recording file which will be used with the playback api instead of opening a device.
+          recording_loop_enabled:            false               # If set to true the recording file will rewind the beginning once end of file is reached.
+          body_tracking_enabled:             false               # If set to true the joint positions will be published as marker arrays.
+          body_tracking_smoothing_factor:    0.0                 # Set between 0 for no smoothing and 1 for full smoothing.
+          rescale_ir_to_mono8:               false               # Whether to rescale the IR image to an 8-bit monochrome image for visualization and further processing. A scaling factor (ir_mono8_scaling_factor) is applied.
+          ir_mono8_scaling_factor:           1.0                 # Scaling factor to apply when converting IR to mono8 (see rescale_ir_to_mono8). If using illumination, use the value 0.5-1. If using passive IR, use 10.
+          imu_rate_target:                   0                   # Desired output rate of IMU messages. Set to 0 (default) for full rate (1.6 kHz).
+          wired_sync_mode:                   0                   # Wired sync mode. 0: OFF, 1: MASTER, 2: SUBORDINATE.
+          subordinate_delay_off_master_usec: 0                   # Delay subordinate camera off master camera by specified amount in usec.
+          tf_prefix:                         '{TEMPLATE_PREFIX}' # The prefix prepended to tf frame ID's.
+
+
+  #=================================================================================================
+  # ABB robot
+  #=================================================================================================
+  robot:
+    rws_state_publisher_node:
+      ros__parameters:
+        robot_ip: '192.168.125.1'                # IP address to the robot controller's RWS server.
+        robot_port: 80                           # Port number of the robot controller's RWS server.
+        robot_nickname: '{TEMPLATE_PREFIX}yumi'  # Arbitrary user nickname/identifier for the robot controller.
+        no_connection_timeout: false             # Specifies whether the node is allowed to wait indefinitely for the robot controller during initialization.
+        polling_rate: 5.0                        # The frequency [Hz] at which the controller state is collected.
+
+    rws_service_provider_node:
+      ros__parameters:
+        robot_ip: '192.168.125.1'                # IP address to the robot controller's RWS server.
+        robot_port: 80                           # Port number of the robot controller's RWS server.
+        robot_nickname: '{TEMPLATE_PREFIX}yumi'  # Arbitrary user nickname/identifier for the robot controller.
+        no_connection_timeout: false             # Specifies whether the node is allowed to wait indefinitely for the robot controller during initialization.

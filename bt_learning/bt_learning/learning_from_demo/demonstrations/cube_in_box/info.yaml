@@ -1,0 +1,5 @@
+default_frame: abb_yumi_base_link
+frames:
+- A
+- marker_61
+- abb_yumi_base_link

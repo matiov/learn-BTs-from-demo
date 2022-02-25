@@ -1,0 +1,30 @@
+#===================================================================================================
+# Description:
+#   Service definition for setting the value of a predefined RAPID variable
+#   for specifying a custom RAPID routine to run.
+#
+# Note:
+#   This variable is defined in each RAPID motion task, in ABB robot controller systems,
+#   that are using the RobotWare "StateMachine Add-In".
+#===================================================================================================
+
+#---------------------------------------------------------------------------------------------------
+# Service request fields
+#---------------------------------------------------------------------------------------------------
+
+# The RAPID task that runs the "StateMachine Add-In" instance.
+string task
+
+# Desired custom RAPID routine to run.
+string routine
+
+---
+
+#---------------------------------------------------------------------------------------------------
+# Service response fields
+#---------------------------------------------------------------------------------------------------
+
+# Service result indicating success/failure.
+#
+# Note: Refer to 'abb_robot_msgs/ServiceResult' for defined results.
+abb_robot_msgs/ServiceResult result

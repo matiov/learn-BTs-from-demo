@@ -1,0 +1,25 @@
+- s(
+- f(
+- object_roughly_at A -0.051385329773478455 0.008450649044314498 -0.04385810802150523
+  0.011186933676982548 marker_61
+- s(
+- f(
+- in_gripper A
+- s(
+- f(
+- gripper_state open
+- open_gripper
+- )
+- pick3 A
+- )
+- )
+- place3 A -0.051385329773478455 0.008450649044314498 -0.04385810802150523 0.011186933676982548
+  marker_61
+- )
+- )
+- in_gripper none
+- f(
+- gripper_state open
+- open_gripper
+- )
+- )

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>abb_yumi_bringup</name>
+  <version>0.1.0</version>
+  <description>
+    Launch and configuration files for starting an ABB mobile platform's core ROS components.
+
+    Note: Intended to be used with the real hardware, e.g. during
+          automatic bringup of the ROS system via a systemd service.
+  </description>
+  <maintainer email="jon.tjerngren@se.abb.com">Jon Tjerngren</maintainer>
+  <license>Proprietary</license>
+  <author>Jon Tjerngren</author>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>abb_yumi_description</exec_depend>
+  <exec_depend>azure_kinect_ros_driver</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

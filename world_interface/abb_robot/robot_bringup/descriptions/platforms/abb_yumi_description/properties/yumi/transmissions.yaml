@@ -1,0 +1,74 @@
+robl_transmission_1:
+  type: "transmission_interface/SimpleTransmission"
+  hardware_interface: "hardware_interface/PositionJointInterface"
+  mechanical_reduction: 1.0
+
+robl_transmission_2:
+  type: "transmission_interface/SimpleTransmission"
+  hardware_interface: "hardware_interface/PositionJointInterface"
+  mechanical_reduction: 1.0
+
+robl_transmission_3:
+  type: "transmission_interface/SimpleTransmission"
+  hardware_interface: "hardware_interface/PositionJointInterface"
+  mechanical_reduction: 1.0
+
+robl_transmission_4:
+  type: "transmission_interface/SimpleTransmission"
+  hardware_interface: "hardware_interface/PositionJointInterface"
+  mechanical_reduction: 1.0
+
+robl_transmission_5:
+  type: "transmission_interface/SimpleTransmission"
+  hardware_interface: "hardware_interface/PositionJointInterface"
+  mechanical_reduction: 1.0
+
+robl_transmission_6:
+  type: "transmission_interface/SimpleTransmission"
+  hardware_interface: "hardware_interface/PositionJointInterface"
+  mechanical_reduction: 1.0
+
+robl_transmission_7:
+  type: "transmission_interface/SimpleTransmission"
+  hardware_interface: "hardware_interface/PositionJointInterface"
+  mechanical_reduction: 1.0
+
+robr_transmission_1:
+  type: "transmission_interface/SimpleTransmission"
+  hardware_interface: "hardware_interface/PositionJointInterface"
+  mechanical_reduction: 1.0
+
+robr_transmission_2:
+  type: "transmission_interface/SimpleTransmission"
+  hardware_interface: "hardware_interface/PositionJointInterface"
+  mechanical_reduction: 1.0
+
+robr_transmission_3:
+  type: "transmission_interface/SimpleTransmission"
+  hardware_interface: "hardware_interface/PositionJointInterface"
+  mechanical_reduction: 1.0
+
+robr_transmission_4:
+  type: "transmission_interface/SimpleTransmission"
+  hardware_interface: "hardware_interface/PositionJointInterface"
+  mechanical_reduction: 1.0
+
+robr_transmission_5:
+  type: "transmission_interface/SimpleTransmission"
+  hardware_interface: "hardware_interface/PositionJointInterface"
+  mechanical_reduction: 1.0
+
+robr_transmission_6:
+  type: "transmission_interface/SimpleTransmission"
+  hardware_interface: "hardware_interface/PositionJointInterface"
+  mechanical_reduction: 1.0
+
+robr_transmission_7:
+  type: "transmission_interface/SimpleTransmission"
+  hardware_interface: "hardware_interface/PositionJointInterface"
+  mechanical_reduction: 1.0
+
+yumi_cs_transmission:
+  type: "transmission_interface/SimpleTransmission"
+  hardware_interface: "hardware_interface/PositionJointInterface"
+  mechanical_reduction: 1.0

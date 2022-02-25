@@ -1,0 +1,23 @@
+% Please compile your document with LuaLaTex and add
+% the following to your document preamble:
+% \usepackage{tikz}
+                    % \usetikzlibrary{arrows,decorations.pathmorphing,backgrounds,fit,positioning,
+                    calc,shapes,graphs,graphdrawing}
+                    % \usegdlibrary{trees}
+                    % \tikzset{control/.style={draw, inner sep=1pt, regular polygon,
+                    regular polygon sides=4, minimum width=1cm, fill=blue!15}}
+                    % \tikzset{action/.style={draw, rectangle, inner sep=0.2cm, fill=green!40}}
+                    % \tikzset{condition/.style={draw, minimum width=1cm, ellipse, inner sep=2pt,
+                    fill=yellow!80}}
+                    % \tikzset{>=stealth}
+                    % \tikzset{level distance=1.5cm}
+                    % \tikzset{sibling distance=2.5cm}
+                    % \tikzset{grow=down}
+\begin{tikzpicture}
+	\graph[tree layout] {
+		n1[as=?, control] -> {
+			n2[as={A roughly at $p_{1}$ in marker_61?}, condition],
+			n3[as={Place A at $p_{1}$ in marker_61}, action]
+		}
+	};
+\end{tikzpicture}

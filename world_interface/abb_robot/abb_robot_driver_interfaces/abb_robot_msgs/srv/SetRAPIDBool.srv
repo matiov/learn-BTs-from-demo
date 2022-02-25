@@ -1,0 +1,26 @@
+#===================================================================================================
+# Description:
+#   Service definition for setting the value of a RAPID 'bool' symbol (e.g. a variable)
+#   defined in an ABB robot controller system.
+#===================================================================================================
+
+#---------------------------------------------------------------------------------------------------
+# Service request fields
+#---------------------------------------------------------------------------------------------------
+
+# Path to the targeted RAPID symbol.
+RAPIDSymbolPath path
+
+# New value of the RAPID symbol.
+bool value
+
+---
+
+#---------------------------------------------------------------------------------------------------
+# Service response fields
+#---------------------------------------------------------------------------------------------------
+
+# Service result indicating success/failure.
+#
+# Note: Refer to 'abb_robot_msgs/ServiceResult' for defined results.
+ServiceResult result

@@ -1,0 +1,55 @@
+#===================================================================================================
+# Description:
+#   Service definition for getting the current 'robtarget' values for a mechanical unit
+#   defined in an ABB robot controller system.
+#===================================================================================================
+
+#---------------------------------------------------------------------------------------------------
+# Constant fields
+#---------------------------------------------------------------------------------------------------
+
+# Coordinate modes in which the 'robtarget' can be reported:
+# - Base frame.
+# - World frame.
+# - Tool frame.
+# - Work object (wobj) frame.
+# - Currently active frame.
+uint8 COORDINATE_MODE_BASE = 1
+uint8 COORDINATE_MODE_WORLD = 2
+uint8 COORDINATE_MODE_TOOL = 3
+uint8 COORDINATE_MODE_WOBJ = 4
+uint8 COORDINATE_MODE_ACTIVE = 5
+
+#---------------------------------------------------------------------------------------------------
+# Service request fields
+#---------------------------------------------------------------------------------------------------
+
+# Name of the targeted mechanical unit.
+string mechunit
+
+# Coordinate mode in which the 'robtarget' will be reported.
+uint8 coordinate
+
+# Desired tool frame in which the 'robtarget' will be reported relative to.
+#
+# Note: Specifying no tool frame results in using the currently active tool.
+string tool
+
+# Desired work object (wobj) frame in which the 'robtarget' will be reported relative to.
+#
+# Note: Specifying no work object frame results in using the currently active work object.
+string wobj
+
+---
+
+#---------------------------------------------------------------------------------------------------
+# Service response fields
+#---------------------------------------------------------------------------------------------------
+
+# The mechanical unit's current 'robtarget'.
+abb_rapid_msgs/RobTarget robtarget
+
+# Service result indicating success/failure.
+#
+# Note: Refer to 'abb_robot_msgs/ServiceResult' for defined results.
+ServiceResult result

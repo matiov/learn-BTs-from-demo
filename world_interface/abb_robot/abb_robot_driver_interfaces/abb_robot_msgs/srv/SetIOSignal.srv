@@ -1,0 +1,26 @@
+#===================================================================================================
+# Description:
+#   Service definition for setting the value of an IO-signal
+#   defined in an ABB robot controller system.
+#===================================================================================================
+
+#---------------------------------------------------------------------------------------------------
+# Service request fields
+#---------------------------------------------------------------------------------------------------
+
+# Name of the targeted IO-signal.
+string signal
+
+# New value for the IO-signal.
+string value
+
+---
+
+#---------------------------------------------------------------------------------------------------
+# Service response fields
+#---------------------------------------------------------------------------------------------------
+
+# Service result indicating success/failure.
+#
+# Note: Refer to 'abb_robot_msgs/ServiceResult' for defined results.
+ServiceResult result

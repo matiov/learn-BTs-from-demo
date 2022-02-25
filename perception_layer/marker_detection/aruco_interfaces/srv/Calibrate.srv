@@ -1,0 +1,5 @@
+# Return the pose of the Camera
+
+---
+geometry_msgs/Pose camera_pose
+bool success
