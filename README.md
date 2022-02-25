@@ -4,7 +4,7 @@ Repository containing different methods to automatically generate a Behavior Tre
 In the learning methods, the BT is represented as a string, e.g. `['s(', 'action1', 'action2', ')']` and then the string is converted in a `py_tree` BT.  
 
 Common behaviors and BT methods are defined in the [behaviors](./behaviors) module.  
-Application specific behaviors will be defined in the application's dedicated module, together with the extension of the method `get_node_from_string()`, see for example the structure of the [mobile conveyor](./simulation/mobile_conveyor) simulated task.
+Application specific behaviors will be defined in the application's dedicated module, together with the extension of the method `get_node_from_string()`.
 
 ## Contents
 
